@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-hant-TW">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale-1">
-        <title>404 | 胡斯凱的網站</title>
-        <link rel="icon" href="/images/favicon.png">
-        <!--描述-->
-        <meta name="description" content="鏈接更寬闊的世界">
-        <!--關鍵詞-->
+        <title>404 | Husky's website</title>
+        <link rel="icon" href="./images/favicon.png">
+        <!--description-->
+        <meta name="description" content="Connecting a wider World.">
+        <!--keywords-->
         <meta name="keywords" content="胡斯凯,胡斯凱,hooskai,siberia husky,SiberiaHusky">
-        <!--Bootstrap-->
-        <link href="//mirror.hooskai.ml/bootstrap/bootstrap.min.css" rel="stylesheet">
-        <!--fontawesome-->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <!--styles-->
-        <link href="//hooskai.ml/assets/style.css" rel="stylesheet">
-        <script src="//hooskai.ml/assets/script.js"></script>
+        <link href="./assets/style.css" rel="stylesheet">
     </head>
-    <body style="background-color: black;">
-        <!--navbar-->
-        <nav class="navbar navbar-dark fixed-top" style="background-color: #1e86dd;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">未找到網頁</a>
-                <button class="btn btn-outline" id="backBtn" style="color: white;" type="button">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-            </div>
-        </nav>
-        <!--back script-->
+    <body style="background-color: #1e86dd;">
+        <!--blue screen-->
+        <div style="margin: 60pt;">
+            <h1 style="font-size: 60pt; font-weight: normal; color: white;">:(</h1>
+            <p style="font-size: 20pt; color: white; margin-top: 20pt;">The Website or Files connot be found. After <span id="changingText">5</span> seconds, the web page will automatically return.</p>
+            <p style="font-size: 10pt; color: white; margin-top: 80pt;">If the file is very Important, you can send an <a href="mailto:mail@hooskai.ml" style="color: white; font-weight: bold;">E-Mail</a> to me.</p>
+        </div>
+        <!--count down script-->
         <script>
-            var backButton = document.getElementById("backBtn");
-            backButton.addEventListener("click", function() {
-                history.back();
+            document.addEventListener("DOMContentLoaded", function() {
+                var textElement = document.getElementById("changingText");
+                var texts = ["4", "3", "2", "1","0"]; // 可根据需要自定义更换的文本
+    
+                var index = 0;
+    
+                setTimeout(function() {
+                    window.location.href = history.back();
+                }, 5000);
+    
+                setInterval(function() {
+                    textElement.textContent = texts[index];
+                    index = (index + 1) % texts.length;
+                }, 1000);
             });
         </script>
-        <!--picture-->
-        <img src="//hooskai.ml/images/404.jpg" width="100%" style="margin-top: 64px;">
         <!--footer-->
-        <footer class="panel-footer d-flex" style="margin: 16px;">
-            <p style="color: white; font-family: 'Montserrat';">&copy; 2019-Now SiberiaHusky</p>
-            <a style="color: gray; margin-left: 16px;" href="//icp.gov.moe/?keyword=20238314"><p style="font-family: 'Montserrat';">萌ICP备20238314号</p></a>
+        <footer style="margin: 60pt; margin-top: -60pt;">
+            <p style="font-size: 10pt; color: rgba(255, 255, 255, 0.25);">Copyright &copy; SiberiaHusky</p>
         </footer>
         <!--script-->
         <script src="//mirror.hooskai.ml/bootstrap/bootstrap.bundle.min.js"></script>
