@@ -53,6 +53,10 @@ a i {
     color: white;
 }
 
+.btn {
+    border-radius: 0;
+}
+
 /*spoiler mask*/
 .spoiler {
     background-color: #252525;
