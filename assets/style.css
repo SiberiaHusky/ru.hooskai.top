@@ -46,6 +46,13 @@ a i {
     margin-right: 8px;
 }
 
+.card {
+    border-radius: 0;
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: #252525;
+    color: white;
+}
+
 /*spoiler mask*/
 .spoiler {
     background-color: #252525;
