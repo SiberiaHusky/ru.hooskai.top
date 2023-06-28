@@ -15,17 +15,111 @@
         <!--fontawesome-->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <!--styles-->
-        <link href="/assets/style.css" rel="stylesheet">
-        <script src="/assets/script.js"></script>
+        <link href="//intl.hooskai.ml/assets/style.css" rel="stylesheet">
     </head>
     <body>
-        <!--slogan-->
-        <div style="margin: 6%;">
-            <h1 style="font-size: 256%; font-weight: normal; color: rgba(255, 255, 255, 0.05);">CONNECTING A WIDER WORLD</h1>
-        </div>
+        <!--navbar-->
+        <nav class="navbar navbar-dark fixed-top" style="background-color: #1e86dd;">
+            <div class="container-fluid">
+                <a class="navbar-brand">Husky's website</a>
+            </div>
+        </nav>
         <!--content-->
-        <div style="margin: 6%;">
-            <h1 style="color: white;">Here is under construction...</h1>
+        <div style="margin: 3%; margin-top: 12%;">
+            <!--profile-->
+            <div class="card" id="profile">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-circle-info" style="margin-right: 2%;"></i>My profile
+                    </h5>
+                    <p class="card-text">
+                        <p>First of all, nice to meet you! :)</p>
+                        <p>As for me, I enjoy playing games, watching videos, and coding.</p>
+                        <p>For me, gaming is a way to relax, <span class="spoiler">although it often ends up backfiring and making me angry, it even once caused me to break a screen.</span> Whether it's indie games or online games, I enjoy any game that aligns with my interests.</p>
+                        <p>Coding, on the other hand, is a way for me to fill my time when I'm bored.<br>So far, I have a basic understanding of <a href="https://www.lua.org">Lua</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML">HTML</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">CSS</a>, and I'm currently trying to deepen my knowledge in those areas.</p>
+                        <p>I'm also very enthusiastic about watching various types of videos, such as TV shows, game streams, and tech news.<br>These videos not only bring me joy, but some of them also broaden my understanding and expand my knowledge.</p>
+                        <p>And when it comes to food, who doesn't love good food?</p>
+                        <p><span class="spoiler">Due to my poor writing skills, this introduction was generated using <a href="https://chat.openai.com/" title="It's very convenient, isn't it?">Chat GPT</a> and then edited by me. :)</span></p>
+                    </p>
+                </div>
+            </div>
+            <!--works-->
+            <div class="card" id="works" style="margin-top: 3%">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-code" style="margin-right: 2%;"></i>My works
+                    </h5>
+                    <p class="card-text">
+                        My works and Web-related stuff.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/apps/piday/index.html">Calculate to Pi day</a></li>
+                    <li class="list-group-item"><a href="//stats.uptimerobot.com/5XXzmSM9NJ" target="_blank">My website status<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li class="list-group-item"><a href="/links.html">Friend links</a></li>
+                    <li class="list-group-item"><a href="//hooskai.ml/">中文版 Chinese</a></li>
+                </ul>
+            </div>
+            <!--contact-->
+            <div class="card" id="contacts" style="margin-top: 3%">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-hashtag" style="margin-right: 2%;"></i>My contact information
+                    </h5>
+                    <p class="card-text">
+                        My account name on SNS, and E-Mail address.
+                    </p>
+                </div>
+                <!--row-->
+                <div class="row row-cols-1 row-cols-md-2 g-4" style="margin: 1%; margin-top: -4%;">
+                    <!--Twitter-->
+                    <div class="col" style="padding-left: 2%; padding-right: 2%;">
+                        <div class="card text-white" style="background-color: #1C9BF0; border-radius: 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-brands fa-twitter" style="margin-right: 2%;"></i>Twitter</h5>
+                                <a href="//twitter.com/hhusky0314" target="_blank" class="btn" style="margin-top: 1%; background-color: white; color: #1C9BF0; font-weight: bold;">hhusky0314</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--GitHub-->
+                    <div class="col" style="padding-left: 2%; padding-right: 2%;">
+                        <div class="card text-white" style="background-color: #24292F; border-radius: 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-brands fa-github" style="margin-right: 2%;"></i>GitHub</h5>
+                                <a href="//github.com/siberiahusky" target="_blank" class="btn" style="margin-top: 1%; background-color: white; color: #24292F; font-weight: bold;">siberiahusky</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Facebook-->
+                    <div class="col" style="padding-left: 2%; padding-right: 2%;">
+                        <div class="card text-white" style="background-color: #1671EA; border-radius: 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-brands fa-facebook" style="margin-right: 2%;"></i>GitHub</h5>
+                                <a href="//www.facebook.com/profile.php?id=100060712148438" target="_blank" class="btn" style="margin-top: 1%; background-color: white; color: #24292F; font-weight: bold;">siberiahusky</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Instagram-->
+                    <div class="col" style="padding-left: 2%; padding-right: 2%;">
+                        <div class="card text-white" style="background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56042, #f77737, #fcaf45, #ffdc80); border-radius: 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-brands fa-instagram" style="margin-right: 2%;"></i>Instagram</h5>
+                                <a href="//www.Instagram.com/invites/contact/?i=1lma9xhiy30g3&utm_content=cii89vh" target="_blank" class="btn" style="margin-top: 1%; background-color: white; color: #24292F; font-weight: bold;">hhusky0314</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--E-Mail-->
+                    <div class="col" style="padding: 2%; padding-top: 0;">
+                        <div class="card text-white" style="background-color: #1e86dd; border-radius: 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-envelope" style="margin-right: 2%;"></i>E-Mail</h5>
+                                <p>The email service for the website is provided by <a href="//mail.ru" style="color: white; font-weight: bold;">Mail.ru</a>.</p>
+                                <a href="mailto:mail@hooskai.ml" target="_blank" class="btn" style="background-color: white; color: #1e86dd; font-weight: bold;">Send me an E-Mail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--footer-->
         <footer style="margin: 6%;">
