@@ -71,6 +71,11 @@ a i {
 
 .btn {
     border-radius: 0;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 /*spoiler mask*/
@@ -93,7 +98,7 @@ a i {
 }
 
 .spoiler:hover a:hover {
-    color: lightblue;
+    color: #1e86dd;
 }
 
 /*footer*/

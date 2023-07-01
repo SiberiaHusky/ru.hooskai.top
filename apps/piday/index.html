@@ -19,11 +19,10 @@
     </head>
     <body>
         <!--navbar-->
-        <!--navbar-->
         <nav class="navbar navbar-dark fixed-top" style="background-color: #1e86dd;">
             <div class="container-fluid">
                 <a class="navbar-brand">Countdown to Pi day</a>
-                <button class="btn btn-outline" id="backBtn" style="color: white;" type="button">
+                <button class="btn btn-outline" id="backBtn" title="Click to return to the homepage" style="color: white;" type="button">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
             </div>
@@ -32,7 +31,7 @@
         <script>
             var backButton = document.getElementById("backBtn");
             backButton.addEventListener("click", function() {
-                history.back();
+                window.location.replace('//intl.hooskai.ml')
             });
         </script>
         <!--main container-->
@@ -85,8 +84,8 @@
             document.getElementById("countdown").innerHTML = timeLeft
         </script>
         <!--footer-->
-        <footer style="margin: 6%;">
-            <a style="color: rgba(255, 255, 255, 0.05);">Copyright &copy; SiberiaHusky</a>
+        <footer style="margin: 16px;">
+            <a style="color: rgba(255, 255, 255, 0.25);">Copyright &copy; SiberiaHusky</a>
         </footer>
         <!--script-->
         <script src="//mirror.hooskai.ml/bootstrap/bootstrap.bundle.min.js"></script>
