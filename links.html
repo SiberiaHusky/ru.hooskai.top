@@ -3,66 +3,107 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale-1">
-        <title>Friendlinks | Husky's website</title>
-        <link rel="icon" href="//intl.hooskai.top/images/favicon.png">
-        <!--description-->
-        <meta name="description" content="Connecting a wider World.">
-        <!--keywords-->
+        <title>Friends links - Husky's World view</title>
+        <link rel="icon" href="//hooskai.top/images/favicon.png">
+        <!-- Description -->
+        <meta name="description" content="Connecting a Wider World">
+        <!-- Keywords -->
         <meta name="keywords" content="胡斯凯,胡斯凱,hooskai,siberia husky,SiberiaHusky">
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <!--fontawesome-->
+        <!-- Fontawesome -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <!--styles-->
+        <!-- Style -->
         <link href="//intl.hooskai.top/assets/style.css" rel="stylesheet">
     </head>
+
     <body>
-        <!--navbar-->
-        <nav class="navbar navbar-dark fixed-top" style="background-color: #1e86dd;">
-            <div class="container-fluid">
-                <a class="navbar-brand">Friendlinks</a>
-                <button class="btn btn-outline" id="backBtn" title="Click to return to the homepage" style="color: white;" type="button">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
+        <!-- nav bar -->
+        <nav class="blur us-n">
+            <div style="margin: 24px; vertical-align: text-bottom;">
+                <p class="dp-ib fs-xl">Friends links</p>
+                <a href="index.html" style="margin-inline-start: 16px;"><p class="dp-ib fs-lr">Husky</p><p class="dp-ib fs-" style="margin-inline-start: 2px;">'s World View</p></a>
             </div>
         </nav>
-        <!--back script-->
-        <script>
-            var backButton = document.getElementById("backBtn");
-            backButton.addEventListener("click", function() {
-                window.location.replace('//intl.hooskai.top')
-            });
-        </script>
-        <!--content-->
-        <div class="card" style="margin: 16px; margin-top: 72px;">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <i class="fa-solid fa-user-group" style="margin-right: 2%;"></i>My friends
-                </h5>
-                <p class="card-text">
-                    <p>After adding this site to the "Friendlinks" webpage or section of your website, please send the URL and a brief description of your website to <a href="mailto:mail@hooskai.top" style="font-weight: bold;">My E-Mail</a>. I will add it once received.</p>
-                    <p>For example: Site Name: Husky's Website, Description: Connecting a wider world.</p>
-                </p>
+
+        <!-- tips -->
+        <div class="us-n" style="display: flex; justify-content: center; background-color: rgba(255, 255, 255, 0.05);">
+            <div class="marquee" style="padding: 8px;"><p>They are my friends, my buddies, my supporters and my World. </p></div>
+        </div>
+
+        <!-- contents -->
+        <div>
+            <!-- cover & slogan -->
+            <div style="position: relative; width: 100%;">
+                <div class="image-container">
+                <img src="https://api.dujin.org/bing/1920.php" style="width: 100%;">
+                <div class="gradient-overlay"></div>
             </div>
-            <!--row-->
-            <div class="row row-cols-1 row-cols-md-2 g-4" style="margin: 0; margin-top: -32px;">
-                <!--Rominwolf-->
-                <div class="col" style="padding: 16px; padding-top: 0;">
-                    <div class="card text-white" style="background-color: #F57C00; border-radius: 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Rominwolf's boxes</h5>
-                            <p>给未来的自己，留一份美好的回忆。</p>
-                            <a href="//blog.wsm.ink/" target="_blank" class="btn" title="Click to visit Rominwolf's website" style="font-weight: bold; border-radius: 0;">Go</a>
-                        </div>
-                    </div>
+                <div class="tt-c" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 2;">
+                    <h1>You can be one too.</h1>
+                </div>
+            </div>
+
+            <!-- friends -->
+            <div class="us-n" style="margin: 32px; margin-top: 0; text-align: end;">
+                <div style="vertical-align: text-bottom;">
+                    <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">我的朋友们</p>
+                    <h1 class="dp-ib fs-xxl">My friends</h1>
+                    <!--p style="color: rgba(255, 255, 255, 0.25);">This list cannot be registered through link exchange.</p-->
+                </div>
+
+                <div style="text-align: left;">
+                    <ul class="friends-links">
+                        <li>
+                            <a href="https://blog.wsm.ink/" target="_blank">
+                                <div style="margin-top: 16px; padding: 16px;">
+                                    <p class="fs-l">
+                                        Rominwolf's boxes 黄油的百宝箱
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- links -->
+            <div class="us-n" style="margin: 32px; margin-top: 64px; margin-bottom: 128px; text-align: end;">
+                <div style="vertical-align: text-bottom;">
+                    <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">友链</p>
+                    <h1 class="dp-ib fs-xxl">Links</h1>
+                    <p style="color: rgba(255, 255, 255, 0.25);">Contact me with my <a href="mailto:mail@hooskai.top">E-Mail</a> or <a href="/">other SMS social platform</a>.</p>
+                </div>
+
+                <div style="text-align: left;">
+                    <ul class="friends-links">
+                        <li>
+                            <a href="#" target="_blank">
+                                <div style="margin-top: 16px; padding: 16px;">
+                                    <p class="fs-l">
+                                        Null
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!--footer-->
-        <footer style="margin: 16px;">
-            <a style="color: rgba(255, 255, 255, 0.25);">Copyright &copy; SiberiaHusky</a>
+
+        <!-- footer -->
+        <footer>
+            <hr>
+
+            <div style="margin: 32px; margin-bottom: 0;">
+                Copyrights &copy; 2019-2023 <a href="/">SiberiaHusky</a>. All rights reserved.<!--
+                --><span style="margin-inline-start: 16px;">KVUI V3<span class="us-n"> — </span>Made by <a href="https://hooskai.top">SiberiaHusky</a> with <a href="#" title="love">❤️</a></span>
+            </div>
+            <ul class="us-n" style="display: flex; margin: 32px; margin-top: 16px;">
+                <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank">CC BY-SA 4.0 DEED</a></li>
+            </ul>
         </footer>
-        <!--script-->
-        <script src="//mirror.hooskai.top/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
+
+    <script>
+        
+    </script>
 </html>
