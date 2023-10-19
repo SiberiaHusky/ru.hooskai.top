@@ -12,7 +12,7 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <!-- Style -->
-        <link href="//intl.hooskai.top/assets/style.css" rel="stylesheet">
+        <link href="//ui.hooskai.top/assets/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -42,7 +42,7 @@
             </div>
 
             <!-- introduction -->
-            <div style="margin: 32px; margin-top: 0; text-align: end;">
+            <div id="tags" style="margin: 32px; margin-top: 0; text-align: end;">
                 <div class="us-n" style="margin-bottom: 16px; vertical-align: text-bottom;">
                     <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">我的标签</p>
                     <h1 class="dp-ib fs-xxl">Мои теги</h1>
@@ -53,7 +53,7 @@
                     <p class="fs-l">
                         <ul>
                             <li>Используйте всю мою жизнь, чтобы рассказать много несчастных историй. </li><!--
-                            --><li>Я рожден для строительства Земли на протяжении <span class="fw-b us-n" id="censord" style="cursor: text;">16</span> лет.</li><!--
+                            --><li>Я рожден для строительства Земли на протяжении <span class="fw-b us-n" id="censord" style="cursor: text;"><span id="age"></span></span> лет.</li><!--
                             --><li>Береговые жители из Furry Republic.</li><!--
                             --><li>INFP</li><!--
                             --><li>Нравится заниматься программированием случайных вещей.</li>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div style="margin: 32px; margin-top: 0; text-align: end;">
+            <div id="foods" style="margin: 32px; margin-top: 0; text-align: end;">
                 <div class="us-n" style="margin-bottom: 16px; vertical-align: text-bottom;">
                     <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">我喜欢的吃的</p>
                     <h1 class="dp-ib fs-xxl">Моя любимая еда</h1>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- works -->
-            <div style="margin: 32px; margin-top: 64px; text-align: end;">
+            <div id="works" style="margin: 32px; margin-top: 64px; text-align: end;">
                 <div class="us-n" style="margin-bottom: 16px; vertical-align: text-bottom;">
                     <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">我的作品</p>
                     <h1 class="dp-ib fs-xxl">Мои работы</h1>
@@ -99,6 +99,7 @@
                         <ul class="list2">
                             <li><a href="https://github.com/SiberiaHusky/Hooskai-Chamfered-Square/blob/main/README.md" target="_blank">Шрифт Hooskai Chamfered Square<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></a></li><!--
                             --><li><a href="https://stats.uptimerobot.com/5XXzmSM9NJ" target="_blank">Статус моего веб-сайта<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></a></li><!--
+                            --><li><a href="https://ui.hooskai.top/" target="_blank">Welt UI<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></a></li><!--
                             --><li><a href="/links">Ссылки друзей</a></li><!--
                             --><li><a href="https://hooskai.top">Chinese Китайски 中文</a></li><!--
                             --><li><a href="https://intl.hooskai.top">English Английский 英文</a></li>
@@ -108,7 +109,7 @@
             </div>
 
             <!-- contacts -->
-            <div style="margin: 32px; margin-top: 64px; text-align: end;">
+            <div id="contacts" style="margin: 32px; margin-top: 64px; text-align: end;">
                 <div class="us-n" style="margin-bottom: 16px; vertical-align: text-bottom;">
                     <p class="dp-ib" style="margin-right: 8px; color: rgba(255, 255, 255, 0.25);">我的联系方式</p>
                     <h1 class="dp-ib fs-xxl">Мои контактные данные</h1>
@@ -156,17 +157,32 @@
             <hr>
 
             <div style="margin: 32px; margin-bottom: 0;">
-                Copyrights &copy; 2019-2023 <a href="/">SiberiaHusky</a>. All rights reserved.<!--
-                --><span style="margin-inline-start: 16px;">KVUI V3<span class="us-n"> — </span>Made by <a href="https://hooskai.top">SiberiaHusky</a> with <a href="#" title="love">❤️</a></span>
+                Copyrights &copy; 2019-<span id="this_year"></span> <a href="/">SiberiaHusky</a>. All rights reserved.
             </div>
             <ul class="us-n" style="display: flex; margin: 32px; margin-top: 16px;">
-                <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i> CC BY-SA 4.0 DEED</a></li><!--
+                <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" title="CC BY-SA 4.0 DEED"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i></a></li>
+                <li><a href="https://ui.hooskai.top/" target="_blank" title="Made by SiberiaHusky with Welt UI and Love"><img src="//ui.hooskai.top/assets/img/Logo_White.png" style="height: 12px;"></a></li><!--
                 --><li style="color: rgba(255, 255, 255, 0.5);">Перевод: <a href="https://www.deepl.com/translator" target="_blank">DeepL</a></li>
             </ul>
         </footer>
     </body>
 
-    <script>
-        
-    </script>
+    <!-- date javasript -->
+    <script type="text/javascript">
+        var date = new Date();
+      
+        var todayDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
+      
+        function calcYearDiff() {
+          const todayMs = new Date(todayDate).getTime()
+          const targetMs = new Date('2007-03-14').getTime()
+          const diffInMs = Math.abs(todayMs - targetMs)
+          const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365)
+          return Math.floor(diffInYears)
+        }
+      
+        document.querySelector('#age').innerText = calcYearDiff()
+      
+        document.querySelector('#this_year').innerText = date.getFullYear();
+      </script>
 </html>

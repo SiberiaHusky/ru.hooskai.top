@@ -12,7 +12,7 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <!-- Style -->
-        <link href="//intl.hooskai.top/assets/style.css" rel="stylesheet">
+        <link href="//ui.hooskai.top/assets/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -94,17 +94,20 @@
             <hr>
 
             <div style="margin: 32px; margin-bottom: 0;">
-                Copyrights &copy; 2019-2023 <a href="/">SiberiaHusky</a>. All rights reserved.<!--
-                --><span style="margin-inline-start: 16px;">KVUI V3<span class="us-n"> — </span>Made by <a href="https://hooskai.top">SiberiaHusky</a> with <a href="#" title="love">❤️</a></span>
+                Copyrights &copy; 2019-<span id="this_year"></span> <a href="/">SiberiaHusky</a>. All rights reserved.
             </div>
             <ul class="us-n" style="display: flex; margin: 32px; margin-top: 16px;">
-                <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i> CC BY-SA 4.0 DEED</a></li><!--
+                <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" title="CC BY-SA 4.0 DEED"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i></a></li>
+                <li><a href="https://ui.hooskai.top/" target="_blank" title="Made by SiberiaHusky with Welt UI and Love"><img src="//ui.hooskai.top/assets/img/Logo_White.png" style="height: 12px;"></a></li><!--
                 --><li style="color: rgba(255, 255, 255, 0.5);">Перевод: <a href="https://www.deepl.com/translator" target="_blank">DeepL</a></li>
             </ul>
         </footer>
     </body>
 
-    <script>
-        
-    </script>
+    <!-- date javasript -->
+    <script type="text/javascript">
+        var date = new Date();
+
+        document.querySelector('#this_year').innerText = date.getFullYear();
+      </script>
 </html>
