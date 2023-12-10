@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale-1">
-        <title>404 Не найдено | Хускаий мировоззрение</title>
+        <title>Хускаий мировоззрение</title>
         <link rel="icon" href="https://hooskai.top/images/favicon.png">
         <!-- Description -->
         <meta name="description" content="Связь с более широким миром">
@@ -15,44 +15,228 @@
         <link href="https://ui.hooskai.top/assets/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="us-n">
         <!-- nav bar -->
-        <nav class="us-n">
+        <nav>
             <div class="navbar" style="vertical-align: text-bottom;">
-                <p>404</p><a href="https://ru.hooskai.top/"><p style="font-size: large;">Хускаий мировоззрение</p></a>
+                <p>Хускаий</p><p style="font-size: large; margin-left: 2px;">мировоззрение</p>
             </div>
         </nav>
 
+        <!-- cover & slogan -->
+        <div style="position: relative; width: 100%;">
+            <div class="image-container">
+                <img src="https://api.dujin.org/bing/1920.php" style="width: 100%;">
+                <div class="gradient-overlay"></div>
+            </div>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 2;">
+                <h1 style="font-size: xx-large;">Связь с более широким миром.</h1>
+            </div>
+        </div>
         <!-- contents -->
-        <div class="us-n">
-            <!-- cover & slogan -->
-            <div style="position: relative; width: 100%;">
-                <div class="image-container">
-                    <img src="https://hooskai.top/images/404.jpg" style="width: 100%;">
-                    <div class="gradient-overlay"></div>
-                </div>
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 2;">
-                    <h1 style="font-size: xx-large;">Запрошенная вами веб-страница не найдена.</h1>
+        <div class="container">
+            <!-- tags -->
+            <div class="card" id="tags">
+                <header style="position: relative;">
+                    <div style="padding: 0;">
+                        <p style="color: rgba(var(--text-color-primary-rgb), 0.25);">我的标签</p>
+                        <h1>Мои теги</h1>
+                    </div>
+
+                    <bold style="position: absolute; right: 24px; top: 24px;">Прежде всего, приятно познакомиться! :)</bold>
+                </header>
+                <hr>
+
+                <div>
+
+                    <ul>
+                        <li>Используйте всю мою жизнь, чтобы рассказать много несчастных историй.</li><!--
+                        --><li>Я рожден для строительства Земли на протяжении <span class="censord" style="cursor: text;"><span id="age"></span></span> лет.</li><!--
+                        --><li>Береговые жители из Furry Republic.</li><!--
+                        --><li>INFP</li><!--
+                        --><li>Нравится заниматься программированием случайных вещей.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="container">
-                <!-- footer -->
-                <div class="card" id="footer">
-                    <div>
-                        <p>Copyrights &copy; 2019-<span id="this_year"></span> <a href="/">胡斯凯(SiberiaHusky)</a>. All rights reserved.</p>
-                        
-                        <ul style="margin-top: 16px;">
-                            <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank" data-title="CC BY-SA 4.0 DEED"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i></a></li>
-                            <li><a href="https://ui.hooskai.top/" target="_blank" data-title="Made with Welt UI"><img src="https://ui.hooskai.top/assets/img/Logo_White.png" style="height: 12px;"></a></li>
-                        </ul>
+            <!-- favorites foods -->
+            <div class="card" id="foods">
+                <header style="position: relative;">
+                    <div style="padding: 0;">
+                        <p style="color: rgba(var(--text-color-primary-rgb), 0.25);">我喜欢的吃的</p>
+                        <h1>Моя любимая еда</h1>
                     </div>
+
+                    <bold style="position: absolute; right: 24px; top: 24px;">Кто не любит хорошую еду?</bold>
+                </header>
+
+                <hr>
+
+                <div>
+                    <ul>
+                        <li>Мясо</li><!--
+                        --><li>Жареное мясо</li><!--
+                        --><li>Сырая лосось</li><!--
+                        --><li>Картофель (любые виды приготовления, кроме сырого) <span class="fw-b" id="censord">(Сладкий картофель НЕ является картофелем!)</span></li><!--
+                        --><li>Гамбургеры и сэндвичи</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- works -->
+            <div class="card" id="works">
+                <header style="position: relative;">
+                    <div style="padding: 0;">
+                        <p style="color: rgba(var(--text-color-primary-rgb), 0.25);">我的作品</p>
+                        <h1>Мои работы</h1>
+                    </div>
+
+                    <bold style="position: absolute; right: 24px; top: 24px;">мои работы и веб-основанные вещи.</bold>
+                </header>
+
+                <hr>
+
+                <div>
+                    <ul class="flex">
+                        <li>
+                            <a href="https://github.com/SiberiaHusky/Hooskai-Chamfered-Square/blob/main/README.md" target="_blank">
+                                <div class="card">
+                                    <p>Шрифт Hooskai Chamfered Square<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ui.hooskai.top/" target="_blank">
+                                <div class="card">
+                                    <p>Welt UI<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stats.uptimerobot.com/5XXzmSM9NJ" target="_blank">
+                                <div class="card">
+                                    <p>Статус моего веб-сайта<i class="fa-solid fa-arrow-up-right-from-square" id="icon-left"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/links">
+                                <div class="card">
+                                    <p>Ссылки друзей</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://hooskai.top">
+                                <div class="card">
+                                    <p>中文 Китайски English</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://intl.hooskai.top">
+                                <div class="card">
+                                    <p>English Английский 英文</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- contacts -->
+            <div class="card" id="contacts">
+                <header style="position: relative;">
+                    <div style="padding: 0;">
+                        <p style="color: rgba(var(--text-color-primary-rgb), 0.25);">我的联系方式</p>
+                        <h1>Мои контактные данные</h1>
+                    </div>
+
+                    <bold style="position: absolute; right: 24px; top: 24px;">Мое экранное имя и E-Mail на платформах социальных сетей.</bold>
+                </header>
+
+                <hr>
+
+                <div>
+                    <ul class="flex">
+                        <li>
+                            <a href="https://twitter.com/hhusky0314" target="_blank" data-title="hhusky0314">
+                                <div class="card">
+                                    <p>X (Twitter)<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/siberiahusky" target="_blank" data-title="SiberiaHusky">
+                                <div class="card">
+                                    <p>GitHub<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100060712148438" target="_blank" data-title="胡斯凯Husky">
+                                <div class="card">
+                                    <p>Facebook<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/invites/contact/?i=1lma9xhiy30g3&utm_content=cii89vh" target="_blank" data-title="胡斯凯">
+                                <div class="card">
+                                    <p>Instagram<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:mail@hooskai.top" target="_blank">
+                                <div class="card">
+                                    <p>E-Mail</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- hitokoto & footer -->
+            <div class="card" id="footer">
+                <a id="hitokoto" target="_blank">
+                    <header>
+                        <p id="hitokoto_from" style="color: rgba(var(--text-color-primary-rgb), 0.25);"></p>
+                        <h1 id="hitokoto_text">Добраться до Хитокото... :D</h1>
+                    </header>
+                </a>
+
+                <hr>
+
+                <div>
+                    <p>Copyrights &copy; 2019-<span id="this_year"></span> <a href="/">胡斯凯(SiberiaHusky)</a>. All rights reserved.</p>
+                    
+                    <ul style="margin-top: 16px;">
+                        <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed" target="_blank" data-title="CC BY-SA 4.0 DEED"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa"></i></a></li>
+                        <li><a href="https://ui.hooskai.top/" target="_blank" data-title="Made with Welt UI"><img src="https://ui.hooskai.top/assets/img/Logo_White.png" style="height: 12px;"></a></li>
+                        <li>Перевод: <a href="https://deepl.com/">DeepL</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </body>
 
     <script type="text/javascript">
+        /* hitokoto */
+        fetch('https://v1.hitokoto.cn/?c=d&c=i&c=k')
+          .then(response => response.json())
+          .then(data => {
+            document.querySelector('#hitokoto_from').innerText = data.from_who + '「' + data.from + '」 '
+            document.querySelector('#hitokoto_text').innerText = data.hitokoto;
+            document.querySelector('#hitokoto').href = `https://hitokoto.cn/?uuid=${data.uuid}`;
+              
+            document.querySelector('#hitokoto').addEventListener('click', function(event) {
+                event.preventDefault();
+                window.open(this.href, '_blank');
+            });
+        });
+
         /* date */
         var date = new Date();
           
